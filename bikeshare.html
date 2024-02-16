@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cyclistic Bike-Share Analysis Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Mehdi Rezagholipour</strong> <span>Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="index.html#one" class="button primary fit">Projects</a></li>
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Cyclistic Bike-Share Analysis Project</h1>
+							</header>
+							<div class="content">
+								<p>Exploring the dynamics of casual and annual riders within Cyclistic's bike-share system<br />
+									A deep dive into data analytics and visualization<br /><br />
+									<br />
+									SQL and Tableau</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Introduction</h2>
+									</header>
+									<p>In this project, I took on the role of a marketing analyst for Cyclistic, a successful bike-share company that launched in 2016. Cyclistic's unique selling proposition lies in its flexible pricing plans, which cater to a wide range of customers, including casual riders and annual members. The project was conceived as part of the Google Data Analytics Professional Certificate capstone project, focusing on a critical business challenge set forth by the company's marketing director, Moreno.</p>
+
+								</div>
+							</section>
+						
+						<!-- Objective -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Objective</h2>
+								</header>
+								<p>The primary goal was to devise effective marketing strategies to convert casual riders into annual members. To achieve this, it was essential to understand the distinct behaviors and preferences of annual members versus casual riders, utilizing Cyclistic's historical bike trip data.</p>
+
+							</div>
+						</section>
+
+						<!-- Problem Statement  -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Problem Statement </h2>
+								</header>
+								<p>Despite the success of Cyclistic's bike-share offering, there's a significant opportunity to enhance profitability by increasing the number of annual members. The company's finance analysts have identified annual members as more profitable than casual riders. However, the marketing strategy needs to shift from a broad approach to a targeted campaign, aiming specifically at converting casual riders into annual members.</p>
+							</div>
+						</section>
+						
+						<!-- Data Source -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Data Source</h2>
+								</header>
+								<p>The analysis was based on an extensive dataset provided by Motivate International Inc., covering over 5 million bike trips from January 2023 to December 2023. This dataset includes detailed information about each trip, such as ride ID, rideable type, start and end times, station names and IDs, and geographical coordinates.</p>
+							</div>
+						</section>
+						
+
+						<!-- Data Preparation -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Data Preparation</h2>
+								</header>
+								<p>I began by loading the CSV data files into SQL tables for each month, using MySQL Workbench for data cleaning and transformation. Despite the challenges of processing such a large dataset locally, I unified all data into a single table, ensure data type correctness, remove rows with missing information, and rectify inconsistencies in station names and IDs. Additionally, I standardized the geographical coordinates to eliminate discrepancies in start and end locations caused by the on-bike GPS devices.</p>
+								<p><a href="https://github.com/mehdi-rgp/bikeshare">View my SQL queries on GitHub</a></p>	
+							</div>
+						</section>
+
+						<!-- Data Analysis and Visualization -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Data Analysis and Visualization</h2>
+								</header>
+								<p>After cleaning the data, I imported it into Tableau to create insightful visualizations and dashboards. The analysis focused on comparing the usage patterns of annual members and casual riders, examining aspects such as ride frequency, duration, preferred bike types, and usage by time of day, week, and month.</p>
+							</div>
+						</section>
+
+						<!-- Tableau Dashboard Embed Code -->
+						
+						<!-- Tableau Dashboard Embed Code -->
+						<div class='tableauPlaceholder' id='viz1708107590466' style='position: relative; max-width: 1366px; /* Adjust this width as needed */ margin: 0 auto; padding: 20px 0;'>
+							<noscript><a href='#'><img alt='Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoogleDataAnalyticsCapstoneCyclisticbike-share&#47;Analysis&#47;1_rss.png' style='border: none' /></a></noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+								<param name='embed_code_version' value='3' /> 
+								<param name='site_root' value='' />
+								<param name='name' value='GoogleDataAnalyticsCapstoneCyclisticbike-share&#47;Analysis' />
+								<param name='tabs' value='no' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoogleDataAnalyticsCapstoneCyclisticbike-share&#47;Analysis&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='language' value='en-US' />
+								<param name='filter' value='publish=yes' />
+							</object>
+						</div>
+						<script type='text/javascript'>
+							var divElement = document.getElementById('viz1708107590466');
+							var vizElement = divElement.getElementsByTagName('object')[0];
+							if (divElement.offsetWidth > 800) { vizElement.style.width='1366px';vizElement.style.height='795px';} 
+							else if (divElement.offsetWidth > 500) { vizElement.style.width='1366px';vizElement.style.height='795px';} 
+							else { vizElement.style.width='100%';vizElement.style.height='1977px';}
+							var scriptElement = document.createElement('script');
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);
+						</script>
+
+				
+						<!-- Insights and Findings -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Insights and Findings</h2>
+								</header>
+								<p>The analysis revealed several key insights:</p>
+								<li>Both user groups favored warmer months, with peak usage in June, July, and August.</li>
+								<li>Annual members primarily used bikes on weekdays, likely for commuting, while casual riders preferred weekends, indicating leisure use.</li>
+								<li>Afternoon periods saw the highest usage among both groups, with a notable morning peak for annual members, further supporting the commuting hypothesis.</li>
+								<li>Classic bikes were the most popular, with casual riders showing a preference for docked bikes.</li>
+								<li>Casual riders frequently started and ended trips at leisure locations, whereas annual members favored business districts and areas with limited parking and high school density.</li>
+
+							</div>
+						</section>
+
+						<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Conclusion</h2>
+								</header>
+								<p>									
+									Digging into Cyclistic's bike data, we've uncovered some pretty cool patterns that tell us a lot about how folks are rolling through the city. First up, everyone loves a good ride when the sun's out, with the biggest bike boom happening in the sunny months of June, July, and August. But here’s where it gets interesting: our annual members are mostly hitting the streets on weekdays, zipping through the morning rush to get to work or school. It's all about the commute for them, which makes a ton of sense when you look at where they start and end their journeys—busy business districts and places where parking's a nightmare. <br /><br />
+									
+									On the flip side, our casual riders are all about that weekend vibe, cruising for leisure or squeezing in some pedal-powered exercise. They're picking days when the office crowd's at rest, and they’re all in for the fun spots around town. And when it comes to their ride of choice? Classic bikes win the popularity contest, but docked bikes have a special place in the hearts of those casual cruisers, probably because they're just perfect for those laid-back, no-fuss trips. <br /> <br />
+									
+									So, what's the big picture? Our annual members are using Cyclistic as a key part of their daily grind, while casual riders are in it for the good times and the workout. Knowing this, we've got a golden opportunity to tailor our messages, making sure we're chatting up potential annual members about how we can make their commutes easier and pitching the casual crowd with all the fun and fitness possibilities waiting on two wheels. It's all about speaking their language and meeting them where they're at.</p>
+
+							</div>
+						</section>
+						
+
+						<!-- Reflection -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Reflection</h2>
+								</header>
+								<p>This project not only allowed me to apply and enhance my data analytics skills but also offered a real-world perspective on how data-driven strategies can impact business decisions. The challenges encountered, particularly in data processing and analysis, have enriched my problem-solving skills and my ability to derive actionable insights from complex datasets.</p>
+
+							</div>
+						</section>
+        				
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<a href="mailto:mehdi.rezagholipour@gmail.com">mehdi.rezagholipour@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<span>(+44) 07466683765</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<span>Birmingham, UK</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>  -->
+								<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+								<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+								<li><a href="https://github.com/mehdi-rgp?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/rezagholipour/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
