@@ -50,7 +50,7 @@
 								<p>Exploring the dynamics of casual and annual riders within Cyclistic's bike-share system<br />
 									A deep dive into data analytics and visualization<br /><br />
 									<br />
-									SQL and Tableau</p>
+									SQL, Python and Tableau</p>
 							</div>
 						</div>
 					</section>
@@ -62,7 +62,7 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Introduction</h2>
+										<h2>Overview</h2>
 									</header>
 									<p>In this project, I took on the role of a marketing analyst for Cyclistic, a successful bike-share company that launched in 2016. Cyclistic's unique selling proposition lies in its flexible pricing plans, which cater to a wide range of customers, including casual riders and annual members. The project was conceived as part of the Google Data Analytics Professional Certificate capstone project, focusing on a critical business challenge set forth by the company's marketing director, Moreno.</p>
 
@@ -79,17 +79,37 @@
 
 							</div>
 						</section>
-
-						<!-- Problem Statement  -->
+						
+						
+						<!-- Key Findings -->
 						<section id="one">
 							<div class="inner">
 								<header class="major">
-									<h2>Problem Statement </h2>
+									<h2>Key Findings</h2>
 								</header>
-								<p>Despite the success of Cyclistic's bike-share offering, there's a significant opportunity to enhance profitability by increasing the number of annual members. The company's finance analysts have identified annual members as more profitable than casual riders. However, the marketing strategy needs to shift from a broad approach to a targeted campaign, aiming specifically at converting casual riders into annual members.</p>
+								<p>The analysis revealed several key insights:</p>
+								<li><b>Seasonality:</b> Both groups used bikes more in warmer months (June-August).</li>
+								<li><b>Weekday vs. Weekend:</b> Annual members used bikes more on weekdays, while casual riders favored weekends.</li>
+								<li><b>Time of Day:</b> Usage peaked in the afternoon (4-6 pm) for both groups, with an additional morning peak (7-9 am) for annual members.</li>
+								<li><b>Bike Type:</b> Classic bikes were most popular. Casual riders used docked bikes more frequently.</li>
+								<li><b>Trip Duration:</b> Casual riders averaged longer rides (22.94 minutes) compared to annual members (12.13 minutes).</li>
+								<li><b>Popular Routes:</b> Most rides occurred within districts: <b>Near North Side</b> (both groups), <b>Near West Side</b> (annual members), <b>Lincoln Park</b> & <b>LOOP</b> (casual riders).</li>
+
 							</div>
 						</section>
-						
+
+						<!-- Insights -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>Insights</h2>
+								</header>
+								<li>Annual members mostly use bikes for commuting (workdays, busy districts).</li>
+								<li>Casual riders mostly use bikes for leisure (weekends, fun spots).</li>
+							</div>
+						</section>
+
+
 						<!-- Data Source -->
 						<section id="one">
 							<div class="inner">
@@ -101,14 +121,17 @@
 						</section>
 						
 
-						<!-- Data Preparation -->
+						<!-- Technical Skills -->
 						<section id="one">
 							<div class="inner">
 								<header class="major">
-									<h2>Data Preparation</h2>
+									<h2>Technical Skills Highlighted:</h2>
 								</header>
-								<p>I began by loading the CSV data files into SQL tables for each month, using MySQL Workbench for data cleaning and transformation. Despite the challenges of processing such a large dataset locally, I unified all data into a single table, ensure data type correctness, remove rows with missing information, and rectify inconsistencies in station names and IDs. Additionally, I standardized the geographical coordinates to eliminate discrepancies in start and end locations caused by the on-bike GPS devices.</p>
-								<p><a href="https://github.com/mehdi-rgp/bikeshare">View my SQL queries on GitHub</a></p>	
+								<li><b>Data cleaning and transformation (SQL):</b>  This phase included integrating monthly datasets into a unified table, data type corrections, addressing inconsistencies in station names and IDs, creating a separate stations table for storgae and performance efficiency.</li>
+								<li><b>Python scripting</b> I used <a href="https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6">Community Areas Boundaries</a> data from the City of Chicago to categorize stations by district, to enhance the spatial analysis. Connecting the spatial data to stations table was performed in Python.</li>
+								<li><b>Data visualization:</b> Tableau</li>					
+								<p></p>
+								<p><a href="https://github.com/mehdi-rgp/bikeshare">View SQL queries and Python code on GitHub</a></p>	
 							</div>
 						</section>
 
@@ -156,39 +179,6 @@
 						</script>
 
 				
-						<!-- Insights and Findings -->
-						<section id="one">
-							<div class="inner">
-								<header class="major">
-									<h2>Insights and Findings</h2>
-								</header>
-								<p>The analysis revealed several key insights:</p>
-								<li>Both user groups favored warmer months, with peak usage in June, July, and August.</li>
-								<li>Annual members primarily used bikes on weekdays, likely for commuting, while casual riders preferred weekends, indicating leisure use.</li>
-								<li>Afternoon periods saw the highest usage among both groups, with a notable morning peak for annual members, further supporting the commuting hypothesis.</li>
-								<li>Classic bikes were the most popular, with casual riders showing a preference for docked bikes.</li>
-								<li>Casual riders frequently started and ended trips at leisure locations, whereas annual members favored business districts and areas with limited parking and high school density.</li>
-
-							</div>
-						</section>
-
-						<!-- One -->
-						<section id="one">
-							<div class="inner">
-								<header class="major">
-									<h2>Conclusion</h2>
-								</header>
-								<p>									
-									Digging into Cyclistic's bike data, we've uncovered some pretty cool patterns that tell us a lot about how folks are rolling through the city. First up, everyone loves a good ride when the sun's out, with the biggest bike boom happening in the sunny months of June, July, and August. But here’s where it gets interesting: our annual members are mostly hitting the streets on weekdays, zipping through the morning rush to get to work or school. It's all about the commute for them, which makes a ton of sense when you look at where they start and end their journeys—busy business districts and places where parking's a nightmare. <br /><br />
-									
-									On the flip side, our casual riders are all about that weekend vibe, cruising for leisure or squeezing in some pedal-powered exercise. They're picking days when the office crowd's at rest, and they’re all in for the fun spots around town. And when it comes to their ride of choice? Classic bikes win the popularity contest, but docked bikes have a special place in the hearts of those casual cruisers, probably because they're just perfect for those laid-back, no-fuss trips. <br /> <br />
-									
-									So, what's the big picture? Our annual members are using Cyclistic as a key part of their daily grind, while casual riders are in it for the good times and the workout. Knowing this, we've got a golden opportunity to tailor our messages, making sure we're chatting up potential annual members about how we can make their commutes easier and pitching the casual crowd with all the fun and fitness possibilities waiting on two wheels. It's all about speaking their language and meeting them where they're at.</p>
-
-							</div>
-						</section>
-						
-
 						<!-- Reflection -->
 						<section id="one">
 							<div class="inner">
